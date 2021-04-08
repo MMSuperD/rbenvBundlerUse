@@ -13,6 +13,7 @@
 		249DAA52261F05920002FDED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249DAA50261F05920002FDED /* Main.storyboard */; };
 		249DAA54261F05960002FDED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 249DAA53261F05960002FDED /* Assets.xcassets */; };
 		249DAA57261F05960002FDED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249DAA55261F05960002FDED /* LaunchScreen.storyboard */; };
+		3F5ECF9BA6115F1CD1332568 /* Pods_RbenvAndBundlerTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2BAF325681F4D9A3E838D0 /* Pods_RbenvAndBundlerTestProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		249DAA53261F05960002FDED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		249DAA56261F05960002FDED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		249DAA58261F05960002FDED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F85D6DCD43F6720157BE3C9 /* Pods-RbenvAndBundlerTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RbenvAndBundlerTestProject.debug.xcconfig"; path = "Target Support Files/Pods-RbenvAndBundlerTestProject/Pods-RbenvAndBundlerTestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		DBE7ED7DE2F0F32BF53F55D4 /* Pods-RbenvAndBundlerTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RbenvAndBundlerTestProject.release.xcconfig"; path = "Target Support Files/Pods-RbenvAndBundlerTestProject/Pods-RbenvAndBundlerTestProject.release.xcconfig"; sourceTree = "<group>"; };
+		EF2BAF325681F4D9A3E838D0 /* Pods_RbenvAndBundlerTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RbenvAndBundlerTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5ECF9BA6115F1CD1332568 /* Pods_RbenvAndBundlerTestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				249DAA49261F05920002FDED /* RbenvAndBundlerTestProject */,
 				249DAA48261F05920002FDED /* Products */,
+				A0F61420C4EA64E8ADE1C03E /* Pods */,
+				2C57FA10EB8D728F122E6A80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = RbenvAndBundlerTestProject;
 			sourceTree = "<group>";
 		};
+		2C57FA10EB8D728F122E6A80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF2BAF325681F4D9A3E838D0 /* Pods_RbenvAndBundlerTestProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0F61420C4EA64E8ADE1C03E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F85D6DCD43F6720157BE3C9 /* Pods-RbenvAndBundlerTestProject.debug.xcconfig */,
+				DBE7ED7DE2F0F32BF53F55D4 /* Pods-RbenvAndBundlerTestProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 249DAA5B261F05960002FDED /* Build configuration list for PBXNativeTarget "RbenvAndBundlerTestProject" */;
 			buildPhases = (
+				03F76D8DC2AB5C1DCB05733C /* [CP] Check Pods Manifest.lock */,
 				249DAA43261F05920002FDED /* Sources */,
 				249DAA44261F05920002FDED /* Frameworks */,
 				249DAA45261F05920002FDED /* Resources */,
+				0B45F0B7AC45639891934A06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03F76D8DC2AB5C1DCB05733C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RbenvAndBundlerTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B45F0B7AC45639891934A06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RbenvAndBundlerTestProject/Pods-RbenvAndBundlerTestProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RbenvAndBundlerTestProject/Pods-RbenvAndBundlerTestProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RbenvAndBundlerTestProject/Pods-RbenvAndBundlerTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		249DAA43261F05920002FDED /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		249DAA5C261F05960002FDED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F85D6DCD43F6720157BE3C9 /* Pods-RbenvAndBundlerTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		249DAA5D261F05960002FDED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE7ED7DE2F0F32BF53F55D4 /* Pods-RbenvAndBundlerTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
